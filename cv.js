@@ -1,7 +1,4 @@
-<script>
-		$(document).ready(function(){
-    		$("button").click(function(){
-        	$("p").toggle();
-    });
-});
-</script>
+ function afficher(id_div) {
+				 $('#'+id_div).toggle();
+  
+  }
