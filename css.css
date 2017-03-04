@@ -1,0 +1,27 @@
+.page{
+		width : 950px;
+		margin : auto;
+		font-size : 16px;
+		font-family : 'Source sans Pro', calibri, Tahoma, sans-serif;
+		background-color: GhostWhite;
+	}
+	.infophoto{
+		height : 200px;
+	}
+	.info{
+		float : left;
+	}
+	.photo{
+		float : right;
+		width : 150px;
+		height: 150px;
+	}
+	
+	.h1{
+		background-color: blue;
+		color : black;
+	}
+	.h2{
+		
+		color : blue;
+	}
