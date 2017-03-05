@@ -7,6 +7,52 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			
 				<script src="cv.js"></script>
+				
+				<script type="text/javascript">
+
+
+function verifMail(a)
+testm = false ;
+ for (var j=1 ; j<(a.length) ; j++) {
+ if (a.charAt(j)=='@') {
+   if (j<(a.length-4)){
+    for (var k=j ; k<(a.length-2) ; k++) {
+     if (a.charAt(k)=='.') testm = true;
+    }
+   }
+  }
+ }
+if (testm==false) alert('Votre adresse e-mail est incorrecte.');
+else alert('Votre adresse e-mail semble correcte.'); 
+return testm ;
+}
+
+function verifier ()
+{
+	erreur = document.getElementsByName("mess")[0];
+	test   = document.getElementsByName("champs");
+
+	for (var z=0; z<test.length; z++)
+	{
+		if (test[z].value == "")
+		{
+			erreur.value = "Ce champs doit être renseigné !";
+			test[z].style.backgroundColor = "red";
+			return false;
+		}
+		else
+		{
+			test[z].style.backgroundColor = "white";
+		}
+	}
+
+	erreur.value = "";
+
+	return true;
+}
+
+</script>
+
   
 	</head>
 	<body>
@@ -166,6 +212,82 @@
 	Scolaire<br>
     </p>
 </div>
+		<form action="envoie.php" method="post" onsubmit="return verifier();">		
+		<table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
+		<form action="envoi.php" method="post" enctype="application/x-www-form-urlencoded" name="formulaire">
+		<tr> 
+		<td colspan="3"><strong>Envoyer un message</strong></td>
+		</tr>
+		<tr> 
+	
+		<tr>
+		<td width="17%"> <div align = "left">nom</div> 
+		<td colspan="2">
+		<input type="text" name="champs" value="" size="45" maxlength="100">  
+		<td colspan="2" width="17%">
+		<div align="left">
+		<input type="button" value="Vérifier" onClick="verifMail(document.formulaire.nom.value)">
+		</div></td>
+		</tr>
+		<tr>		
+		
+		
+		
+		<tr>
+		<td width="17%"> <div align = "left">e-mail </div>
+		<td colspan="2">
+		<input type="text" name="email" disabled="disabled" value ="" size="45" maxlength="100">  
+		<td colspan="2" width="17%">
+		<div align="left">
+		<input type="button" value="Vérifier" onClick="verifMail(document.formulaire.email.value)">
+		</div></td>
+		</tr>
+		<tr>
+		<td width="17%"> <div align = "left">telephone</div> 
+		<td colspan="2">
+		<input type="text" name="telephone" size="45" maxlength="100">  
+		<td colspan="2" width="17%">
+		<div align="left">
+		<input type="button" value="Vérifier" onClick="verifMail(document.formulaire.telephone.value)">
+		</div></td>
+		</tr>
+		
+		<tr> 
+		<td><div align="left">Message</div></td>
+		<td colspan="2"><textarea name="message" cols="50" rows="10"></textarea></td>
+		<td colspan="2" width="17%"><div align="left">
+		<input type="button" value="Vérifier" onClick="verifMail(document.formulaire.telephone.value)">
+		</div></td>	
+	
+		</tr>
+		
+		
+		<tr>
+		<td width="17%"> <div align = "left">erreur</div>
+		<td colspan="2">
+		<input type="text" name="mess" disabled="disabled" value="" size="45" maxlength="100" /><br />
+		<td colspan="2">
+		<input type="submit" value="envoyer" /> <br/>
+		</td>
+		</tr>
+		
+		<tr> 
+		<td></td>
+		<td width="42%"><center>
+		<input type="reset" name="Submit" value="Réinitialiser le formulaire">
+		</center></td>
+		<td width="42%"><center>
+		<input type="submit" name="Submit" value="Envoyer">
+		</center></td>
+		</tr>
+		
+		</form>
+		</table>
+					
+	</form>
+	
+	
+	
 	<a href="index.html">Page Principale </a> <br>
 	<a href="Air Liquide.html">Air Liquide</a> <br>
 	<a href="LEONI.html">LEONI </a> <br>
