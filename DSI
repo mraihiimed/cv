@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css.css" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			
+				<script src="cv.js"></script>
+  
+	</head>
+
+	<body >
+		<div class= "page">
+		 
+			<div class = "h1">
+				<h1>
+				Compétence en métrologie
+			</h1>
+			</div>
+		<img src="module.JPG" alt="module" style="width:264px;height:304px; float: right">
+		
+		<div class = "h2">
+		<h2>Etude et développement des modules de tests</h2>
+		</div>
+		<div class ="h2">
+		
+		<h2>De Septembre 2013 à Juin 2015</h2>
+		</div>
+		
+		<div class = "h2">
+		<h2>DSI: Diagnostic: CDI 
+			<button	style="font-size: 50%;" onclick="afficher('LEONI');">cacher
+			</button> 
+		</h2>
+		</div>	
+		<div id = "DSI: Diagnostic">
+			<p>
+		Mission : Dépouillement technique des instruments et la configuration des automates Bently Nevada<br/></p>
+		Tâche #1 : Dimensionnement des instruments utilisés en métrologie <br/>
+ 	  Sous-tâche #1.1 : Dépouillement des soupapes de sureté, vanne de contrôle et régulateurs de pression <br/>
+ 	  Sous-tâche #1.2 : Etude des Instruments de métrologies <br/>
+ 	  Tâche #2 : Mise à niveau des Racks Bently Nevada (3300 Racks en 3500 Racks) sur la plateforme Hannibal (Client Britsh Gas Tunisie) <br/>
+ 	  Sous-tâche #2.1 : Migration des anciennes cartes de commande <br/>
+ 	  Sous-tâche #2.2 : Modification du programme <br/>
+ 	  Sous-tâche #2.3 : Ajout de nouvelle carte d’acquisition <br/>
+ 	  Sous-tâche #2.4 : Test et validation du bon fonctionnement des chaines de mesures <br/>
+ 	  Tâche #3 : Elaboration des rapports de suivi <br/>
+    <br/>
+			
+		</div>
+				
+		<h2>Compétences et outils 
+			<button
+			style="font-size: 50%;" onclick="afficher('competence');">cacher
+		</button> 
+			</h2>
+		<div id = "competence">
+		<p>
+		CONFIGURATION DES AUTOMATES BENTLY NEVADA GE <br/>
+		METROLOGIE <br/>
+		</p>
+		</div>
+				
+		<a href="index.html">Page Principale </a> <br>
+		<a href="Air Liquide.html">Air Liquide</a> <br>
+    
+		</div>
+		</body>
+</html>
